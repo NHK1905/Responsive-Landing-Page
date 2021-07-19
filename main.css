@@ -100,6 +100,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .bg-img {
@@ -142,61 +143,81 @@ section {
     margin: 3rem 0;
     cursor: pointer;
     font-weight: 600;
+    transition: .5s ease-in-out;
 }
+
+.slogan button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+#about img {
+    border-radius: 2rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 24px, 
+    rgba(17, 17, 26, 0.1) 0px 16px 56px,
+    rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.about-slogan {
+    padding: 3rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    transform: translateX(-5rem);
+}
+
+.about-slogan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: var(--grey);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.food-menu {
+    padding: 4rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, .2) 0px 7px 29px 0px;
+}
+
+.food-menu p {
+    margin: 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Grid */
 
 /* responsive for extra small devices */
-@media only screen and (max-width: 600px) {
-    .col-xs-1 {
-        width: 8.33%;
-    }
-    
-    .col-xs-2 {
-        width: 16.66%;
-    }
-    
-    .col-xs-3 {
-        width: 25%;
-    }
-    
-    .col-xs-4 {
-        width: 33.33%;
-    }
-    
-    .col-xs-5 {
-        width: 41.66%;
-    }
-    
-    .col-xs-6 {
-        width: 50%;
-    }
-    
-    .col-xs-7 {
-        width: 58.33%;
-    }
-    
-    .col-xs-8 {
-        width: 66.66%;
-    }
-    
-    .col-xs-9 {
-        width: 75%;
-    }
-    
-    .col-xs-10 {
-        width: 83.33%;
-    }
-    
-    .col-xs-11 {
-        width: 91.66%;
-    }
-    
-    .col-xs-12 {
-        width: 100%;
-    }
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -252,4 +273,58 @@ section {
 
 .col-12 {
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-xs-1 {
+        width: 8.33%;
+    }
+    
+    .col-xs-2 {
+        width: 16.66%;
+    }
+    
+    .col-xs-3 {
+        width: 25%;
+    }
+    
+    .col-xs-4 {
+        width: 33.33%;
+    }
+    
+    .col-xs-5 {
+        width: 41.66%;
+    }
+    
+    .col-xs-6 {
+        width: 50%;
+    }
+    
+    .col-xs-7 {
+        width: 58.33%;
+    }
+    
+    .col-xs-8 {
+        width: 66.66%;
+    }
+    
+    .col-xs-9 {
+        width: 75%;
+    }
+    
+    .col-xs-10 {
+        width: 83.33%;
+    }
+    
+    .col-xs-11 {
+        width: 91.66%;
+    }
+    
+    .col-xs-12 {
+        width: 100%;
+    }
+
+    .h-xs {
+        display: none;
+    }
 }
