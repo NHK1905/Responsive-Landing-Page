@@ -31,14 +31,14 @@
                         about
                     </div>
                 </a>
-                <a href="#food-menu">
+                <a href="#food-menu-section">
                     <div class="menu-item">
                         menu
                     </div>
                 </a>
-                <a href="#recipe">
+                <a href="#testimonial">
                     <div class="menu-item">
-                        recipe
+                        testimonial
                     </div>
                 </a>
             </div>
@@ -99,14 +99,14 @@
                 <h1>What will <span class="primary-color">you</span> eat today?</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, rem blanditiis vitae, at aut facilis voluptas culpa natus laudantium a vel non, nesciunt similique ratione nam veritatis quia. Sed, doloremque?</p>
                 <div class="food-category">
-                    <button class="active">All food</button>
-                    <button>Salad</button>
-                    <button>Roots</button>
-                    <button>Legumes</button>
-                    <button>Fruit</button>
+                    <button class="active" data-food-type="all">All food</button>
+                    <button data-food-type="salad">Salad</button>
+                    <button data-food-type="roots">Roots</button>
+                    <button data-food-type="legumes">Legumes</button>
+                    <button data-food-type="fruit">Fruit</button>
                 </div>
-                <div class="food-item-wrap">
-                    <div class="food-item">
+                <div class="food-item-wrap all">
+                    <div class="food-item salad-type">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-holder  bg-img" style="background-image: url(./assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
@@ -126,7 +126,47 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item">
+                    <div class="food-item roots-type">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-holder  bg-img" style="background-image: url(./assets/sina-piryae-bBzjWthTqb8-unsplash.jpg);"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item salad-type">
+                        <div class="item-wrap">
+                            <div class="item-img">
+                                <div class="img-holder  bg-img" style="background-image: url(./assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg);"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item legumes-type">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-holder  bg-img" style="background-image: url(./assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
@@ -146,7 +186,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item">
+                    <div class="food-item fruit-type">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-holder  bg-img" style="background-image: url(./assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
@@ -166,47 +206,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item">
-                        <div class="item-wrap">
-                            <div class="item-img">
-                                <div class="img-holder  bg-img" style="background-image: url(./assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
-                            </div>
-                            <div class="item-info">
-                                <div>
-                                    <h3>
-                                        Lorem ipsum
-                                    </h3>
-                                    <span>
-                                        120$
-                                    </span>
-                                </div>
-                                <div class="cart-btn">
-                                    <i class="bx bx-cart-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="food-item">
-                        <div class="item-wrap">
-                            <div class="item-img">
-                                <div class="img-holder  bg-img" style="background-image: url(./assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
-                            </div>
-                            <div class="item-info">
-                                <div>
-                                    <h3>
-                                        Lorem ipsum
-                                    </h3>
-                                    <span>
-                                        120$
-                                    </span>
-                                </div>
-                                <div class="cart-btn">
-                                    <i class="bx bx-cart-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="food-item">
+                    <div class="food-item salad-type">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-holder  bg-img" style="background-image: url(./assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
@@ -235,11 +235,11 @@
     <section id="testimonial">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 col-xs-12">
                     <div class="review-wrap">
                         <div class="review-content">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate, eos voluptate est cum sequi numquam earum placeat deserunt atque dignissimos perspiciatis voluptatum, fugiat nam corrupti! Architecto illo tempora ex!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate, eos voluptate est cum sequi numquam earum placeat deserunt atque dignissimos perspiciatis voluptatum!
                             </p>
                             <div class="review-img bg-img" style="background-image: url(./assets/close-up-portrait-cute-young-woman-holding-textbook-colored-pencils-posing-studio-isolated-pink_176532-9674.jpg);"></div>
                         </div>
@@ -248,20 +248,106 @@
                                 lorem ipsum dolor
                             </h3>
                             <div class="rating">
-                                <i class="bx bxs-stars"></i>
-                                <i class="bx bxs-stars"></i>
-                                <i class="bx bxs-stars"></i>
-                                <i class="bx bxs-stars"></i>
-                                <i class="bx bxs-stars"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-4"></div>
+                <div class="col-4 col-xs-12">
+                    <div class="review-wrap active">
+                        <div class="review-content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate, eos voluptate est cum sequi numquam earum placeat deserunt atque dignissimos perspiciatis voluptatum!
+                            </p>
+                            <div class="review-img bg-img" style="background-image: url(./assets/michael-dam-mEZ3PoFGs_k-unsplash.jpg);"></div>
+                        </div>
+                        <div class="review-info">
+                            <h3>
+                                lorem ipsum dolor
+                            </h3>
+                            <div class="rating">
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <div class="review-wrap">
+                        <div class="review-content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate, eos voluptate est cum sequi numquam earum placeat deserunt atque dignissimos perspiciatis voluptatum!
+                            </p>
+                            <div class="review-img bg-img" style="background-image: url(./assets/portrait-happy-young-man_171337-21716.jpg);"></div>
+                        </div>
+                        <div class="review-info">
+                            <h3>
+                                lorem ipsum dolor
+                            </h3>
+                            <div class="rating">
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- testimonial section end -->
+    <!-- footer -->
+    <section class="footer bg-img" style="background-image: url(./assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>Freshfood</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, tenetur? Sequi, earum mollitia. Quo labore nobis molestias libero sit, architecto eos iure recusandae officiis deleniti perferendis minima, aut dolorem qui.</p>
+                    <br>
+                    <p>Email: example@gmail.com</p>
+                    <p>Phone: +01 234 5678</p>
+                    <p>Website: example.com</p>
+                </div>
+                <div class="col-2 col-xs-12">
+                    <h1>
+                        About us
+                    </h1>
+                    <br>
+                    <ul>
+                        <li><a href="#">Chefs</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Recipe</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1>Subcribe</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quos eius tempora aliquid in delectus sed laudantium officiis eligendi corrupti excepturi, reprehenderit recusandae deserunt quidem veniam? Cum sapiente iste provident.</p>
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your email">
+                        <button>Subcribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+    <!-- back to top -->
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <!-- back to top end -->
+    <script src="main.js"></script>
 </body>
 </html>
