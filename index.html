@@ -12,6 +12,31 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <!-- mobile nav -->
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#about">
+                <i class="bx bxs-smile"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#food-menu-section">
+                <i class="bx bxs-food-menu"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#testimonial">
+                <i class="bx bxs-comment-detail"></i>
+            </a>
+        </div>
+    </div>
+    <!-- mobile nav end -->
     <!-- top nav -->
     <div class="nav">
         <div class="menu-wrap">
@@ -20,7 +45,7 @@
                     Freshfood
                 </div>
             </a>
-            <div class="menu">
+            <div class="menu h-xs">
                 <a href="#home">
                     <div class="menu-item active">
                         home
@@ -56,15 +81,17 @@
             <div class="row">
                 <div class="col-6 col-xs-12">
                     <div class="slogan">
-                        <h1>
+                        <h1 class="left-to-right play-on-scroll">
                             Freshfood
                         </h1>
-                        <p>
+                        <p class="left-to-right play-on-scroll delay-2">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iste aut odit unde ducimus quasi, voluptates fugiat magni voluptatem eos voluptate illo error ad dolorem molestias illum? Illo, id voluptatem?
                         </p>
-                        <button>
-                            Order now
-                        </button>
+                        <div class="left-to-right play-on-scroll delay-4">
+                            <button>
+                                Order now
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,14 +99,14 @@
     </section>
     <!-- section home end -->
     <!-- about section -->
-    <div class="fullheight align-items-center" id="about">
+    <section class="about fullheight align-items-center" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-7 h-xs">
-                    <img src="./assets/dan-gold-4_jhDO54BYg-unsplash.jpg" alt="" class="fullwidth">
+                    <img src="./assets/dan-gold-4_jhDO54BYg-unsplash.jpg" alt="" class="fullwidth left-to-right play-on-scroll">
                 </div>
                 <div class="col-5 col-xs-12 align-items-center">
-                    <div class="about-slogan">
+                    <div class="about-slogan right-to-left play-on-scroll">
                         <h3>
                             <span class="primary-color">We</span> create
                             <span class="primary-color">delicious</span> memories for
@@ -90,7 +117,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- about section end -->
     <!-- food menu section -->
     <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section" style="background-image: url(./assets/katherine-chase-4MMK78S7eyk-unsplash.jpg);">
@@ -99,15 +126,25 @@
                 <h1>What will <span class="primary-color">you</span> eat today?</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, rem blanditiis vitae, at aut facilis voluptas culpa natus laudantium a vel non, nesciunt similique ratione nam veritatis quia. Sed, doloremque?</p>
                 <div class="food-category">
-                    <button class="active" data-food-type="all">All food</button>
-                    <button data-food-type="salad">Salad</button>
-                    <button data-food-type="roots">Roots</button>
-                    <button data-food-type="legumes">Legumes</button>
-                    <button data-food-type="fruit">Fruit</button>
+                    <div class="zoom play-on-scroll">
+                        <button class="active" data-food-type="all">All food</button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-2">
+                        <button data-food-type="salad">Salad</button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-4">
+                        <button data-food-type="roots">Roots</button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-6">
+                        <button data-food-type="legumes">Legumes</button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="fruit">Fruit</button>
+                    </div>
                 </div>
                 <div class="food-item-wrap all">
                     <div class="food-item salad-type">
-                        <div class="item-wrap">
+                        <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
                                 <div class="img-holder  bg-img" style="background-image: url(./assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
                             </div>
@@ -127,7 +164,7 @@
                         </div>
                     </div>
                     <div class="food-item roots-type">
-                        <div class="item-wrap">
+                        <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
                                 <div class="img-holder  bg-img" style="background-image: url(./assets/sina-piryae-bBzjWthTqb8-unsplash.jpg);"></div>
                             </div>
@@ -147,7 +184,7 @@
                         </div>
                     </div>
                     <div class="food-item salad-type">
-                        <div class="item-wrap">
+                        <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
                                 <div class="img-holder  bg-img" style="background-image: url(./assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg);"></div>
                             </div>
@@ -167,9 +204,9 @@
                         </div>
                     </div>
                     <div class="food-item legumes-type">
-                        <div class="item-wrap">
+                        <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
-                                <div class="img-holder  bg-img" style="background-image: url(./assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
+                                <div class="img-holder  bg-img" style="background-image: url(./assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg);"></div>
                             </div>
                             <div class="item-info">
                                 <div>
@@ -187,7 +224,7 @@
                         </div>
                     </div>
                     <div class="food-item fruit-type">
-                        <div class="item-wrap">
+                        <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
                                 <div class="img-holder  bg-img" style="background-image: url(./assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
                             </div>
@@ -207,9 +244,49 @@
                         </div>
                     </div>
                     <div class="food-item salad-type">
-                        <div class="item-wrap">
+                        <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
-                                <div class="img-holder  bg-img" style="background-image: url(./assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg);"></div>
+                                <div class="img-holder  bg-img" style="background-image: url(./assets/carly-jayne-Lv174o7fn7Y-unsplash.jpg);"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item roots-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder  bg-img" style="background-image: url(./assets/sina-piryae-bBzjWthTqb8-unsplash.jpg);"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>
+                                        Lorem ipsum
+                                    </h3>
+                                    <span>
+                                        120$
+                                    </span>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item salad-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder  bg-img" style="background-image: url(./assets/jonathan-farber-OCNqOLeCwOc-unsplash.jpg);"></div>
                             </div>
                             <div class="item-info">
                                 <div>
@@ -236,7 +313,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-xs-12">
-                    <div class="review-wrap">
+                    <div class="review-wrap zoom play-on-scroll delay-2">
                         <div class="review-content">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate, eos voluptate est cum sequi numquam earum placeat deserunt atque dignissimos perspiciatis voluptatum!
@@ -258,29 +335,31 @@
                     </div>
                 </div>
                 <div class="col-4 col-xs-12">
-                    <div class="review-wrap active">
-                        <div class="review-content">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate, eos voluptate est cum sequi numquam earum placeat deserunt atque dignissimos perspiciatis voluptatum!
-                            </p>
-                            <div class="review-img bg-img" style="background-image: url(./assets/michael-dam-mEZ3PoFGs_k-unsplash.jpg);"></div>
-                        </div>
-                        <div class="review-info">
-                            <h3>
-                                lorem ipsum dolor
-                            </h3>
-                            <div class="rating">
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star"></i>
-                                <i class="bx bxs-star"></i>
+                    <div class="zoom play-on-scroll">
+                        <div class="review-wrap active">
+                            <div class="review-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate, eos voluptate est cum sequi numquam earum placeat deserunt atque dignissimos perspiciatis voluptatum!
+                                </p>
+                                <div class="review-img bg-img" style="background-image: url(./assets/michael-dam-mEZ3PoFGs_k-unsplash.jpg);"></div>
+                            </div>
+                            <div class="review-info">
+                                <h3>
+                                    lorem ipsum dolor
+                                </h3>
+                                <div class="rating">
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-4 col-xs-12">
-                    <div class="review-wrap">
+                    <div class="review-wrap zoom play-on-scroll delay-4">
                         <div class="review-content">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate, eos voluptate est cum sequi numquam earum placeat deserunt atque dignissimos perspiciatis voluptatum!
