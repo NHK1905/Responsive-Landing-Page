@@ -551,6 +551,9 @@ section {
 .col-12 {
     width: 100%;
 }
+.mb-nav {
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
     
